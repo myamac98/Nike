@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="/images/nikelogo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New Models</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Sıradan Bir Ayakkabı Değil<br>Bu <span>Nike</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt ab quasi reiciendis voluptatum nihil exercitationem recusandae ratione quis, obcaecati tenetur inventore esse assumenda deserunt animi quisquam rerum aliquid omnis.</p>
+                <a href="#">Daha Fazlası</a>
+            </div>
+            <div class="imgBox">
+                <img src="/images/purpleshoes.png" class="nike">
+            </div>
+            <ul class="thumb">
+                <li><img src="/images/purpleshoes.png" onclick="imgSlider('/images/purpleshoes.png'); changeCircle('#280171')"></li>
+                <li><img src="/images/blueshoes.png" onclick="imgSlider('/images/blueshoes.png'); changeCircle('#61A901')"></li>
+                <li><img src="/images/greenshoes.png" onclick="imgSlider('/images/greenshoes.png'); changeCircle('#0C8297')"></li>
+            </ul>
+
+            <ul class="social">
+                <li><a href="#"><img src="/images/fb.png"></a></li>
+                <li><a href="#"><img src="/images/twt.png"></a></li>
+                <li><a href="#"><img src="/images/ins.png"></a></li>
+            </ul>
+
+        </div>
+    </section> 
+
+    <script type="text/javascript">
+
+        function imgSlider(anything){
+            document.querySelector('.nike').src = anything;
+        }
+
+        function changeCircle(color){
+            const circle = document.querySelector('.circle')
+            circle.style.background = color;
+        }
+    </script>
+
+</body>
+</html>
